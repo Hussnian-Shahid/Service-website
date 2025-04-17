@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-[#FFE9D9] font-Syne h-[800px] relative w-full bg-[url('./hero.png')] bg-no-repeat bg-right-bottom bg-contain ">
+    <div className="bg-[#FFE9D9] font-Syne h-[800px] relative w-full bg-[url(./public/hero.png)] bg-no-repeat bg-right-bottom bg-contain ">
       {/* Top nav */}
       <div className="flex">
         <div className="pl-[45px]"></div>
