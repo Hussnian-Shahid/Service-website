@@ -6,8 +6,8 @@ const About = () => {
   const [activeTab, setactiveTab] = useState(0);
   return (
     <div className="bg-[#F5F5F5]">
-      <div className="w-[1200px] mx-auto h-screen pb-[100px] flex gap-40 pt-[40px] ">
-        <div className="w-[350px]  bg-[#F5F5F5] p-5 ">
+      <div className="md:w-[1200px]  mx-auto  pb-[100px] md:flex gap-40 pt-[50px] ">
+        <div className="w-[350px] w-[]  bg-[#F5F5F5] p-5 ">
           <div className="text-orange-400 font-bold text-2xl">Resume</div>
           <div className="font-Syne font-bold text-5xl py-4">
             All over my details find here...
@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-[850px] ">
+        <div className="md:w-[850px] ">
           {activeTab === 0 && <Aboutme/>}
           {activeTab === 1 && <Experience/>}
           {activeTab === 2 && <Education />}
@@ -64,8 +64,8 @@ export default About;
 const Education = () => {
     return (
         <div>
-      <div className="font-bold text-5xl py-3 pb-10"> Education</div>
-      <div className="flex flex-col gap-y-5">
+      <div className="font-bold text-3xl pl-5 md:text-5xl py-3 pb-10"> Education</div>
+      <div className="flex flex-col gap-y-5 px-5">
         <div className="bg-[#FFFFFF] rounded flex gap-5 p-5 items-center ">
           <div className="text-gray-400">003/2008-07/2011</div>
           <div>
@@ -108,7 +108,7 @@ const Aboutme = () => {
       },
       {
         one: "Email",
-        two: "hussnainshahid1202@gmail.com",
+        two: "hussnian@gmail.com",
       },
       {
         one: "Experience",
@@ -125,8 +125,8 @@ const Aboutme = () => {
     ];
   return (
     <div>
-      <div className="font-bold text-5xl py-3 ">Based in German</div>
-      <div className="text-[#686868] text-[20px] w-[800px] py-6 " >
+      <div className="font-bold text-3xl px-5 md:text-5xl py-3 ">Based in German</div>
+      <div className="text-[#686868] px-5  text-[20px] md:w-[800px] py-6 " >
         I am a full stack developer with solid experience in both front-end and
         back-end technologies. I build responsive websites, scalable APIs, and
         efficient databases. I enjoy solving complex problems and continuously
@@ -135,7 +135,7 @@ const Aboutme = () => {
       <div className=" ">
         {lists.map((list, index) => (
           <div key={index} className="flex items-center">
-            <div className="text-[#434343] text-[20px] w-[140px] py-4 ">{list.one}</div>
+            <div className="text-[#434343] pl-5 text-[20px] w-[140px] py-4 ">{list.one}</div>
             <div className="font-bold text-2xl">{list.two}</div>
           </div>
         ))}
@@ -173,8 +173,8 @@ const Experience = () => {
     ]
     return (
       <div>
-        <div className="font-bold text-5xl  py-3 pb-10">Experience</div>
-        <div className="  grid grid-cols-2 w-[700px] gap-x-10 gap-y-5 ">
+        <div className="font-bold text-3xl pl-5 md:text-5xl  py-3 pb-10">Experience</div>
+        <div className="  grid grid-cols-1 md:grid-cols-2 md:w-[700px] gap-y-10 gap-x-30 px-5">
           {boxs.map((box, index) => (
             <div
               className="bg-[#dad7d5] hover:bg-white transition-all  w-[350px] p-5   rounded-2xl "
@@ -219,8 +219,10 @@ const Award = () => {
     ]
     return (
       <div>
-        <div className="font-bold text-5xl  py-3 pb-10">Experience</div>
-        <div className="  grid grid-cols-2 w-[700px] gap-x-10 gap-y-5 ">
+        <div className="font-bold md:text-5xl text-3xl px-5  py-3 pb-10">
+          Awards
+        </div>
+        <div className="  grid grid-cols-1 px-5 md:grid-cols-2 md:w-[700px] gap-x-30 gap-y-10 rounded-2xl ">
           {boxs.map((box, index) => (
             <div
               className="bg-[#dad7d5] hover:bg-white transition-all  w-[350px] p-5   rounded "
@@ -271,15 +273,21 @@ const Skills = () => {
     ]
     return (
       <div>
-        <div className="font-bold text-5xl  py-3 pb-10">Experience</div>
-        <div className="  grid grid-cols-2 w-[700px] gap-x-10 gap-y-5 ">
+        <div className="font-bold text-3xl px-5  md:text-5xl  py-3 pb-10">
+          Skills
+        </div>
+        <div className="  grid grid-cols-1 md:grid-cols-2 md:w-[700px]  gap-x-30 px-5 gap-y-5 ">
           {language.map((languag, index) => (
             <div
               className="bg-[#cccac8] hover:bg-white transition-all  w-[350px] p-5   rounded-2xl flex justify-center items-center gap-5  "
               key={languag.index}
             >
               <div>
-                <img className="text-[18px] py-4  " src={languag.image} alt="" />{" "}
+                <img
+                  className="text-[18px] py-4  "
+                  src={languag.image}
+                  alt=""
+                />{" "}
               </div>
               <div className="flex justify-center flex-col items-center">
                 <div className="text-3xl font-bold  "> {languag.title} </div>

@@ -29,19 +29,19 @@ const Blog = () => {
   ];
 
   return (
-    <div className="w-[1200px] h-full mx-auto">
+    <div className="md:w-[1200px]  w mx-auto">
       <div className="pt-[50px] text-orange-400 font-bold text-center text-2xl">
         Blog
       </div>
-      <div className="font-bold text-6xl text-center">My blog post</div>
-      <div className="pt-15 grid grid-cols-4 space-x-10">
+      <div className="font-bold text-3xl md:text-6xl text-center">My blog post</div>
+      <div className="pt-15 grid grid-cols-1 px-5 md:grid-cols-4  space-x-10">
         {blog &&
           blog.map((blo, index) => (
-            <div key={index}>
+            <div key={index} className="pb-15" >
               <div>
                 <img src={blo.image} alt="" />
               </div>
-              <div className="flex justify-center items-center space-x-3 pt-4">
+              <div className="flex justify-center items-center md:space-x-3 px-5 pt-4">
                 <div  className="flex flex-row-reverse justify-center items-center">
                   <div>{blo.title}</div>
                   <div>

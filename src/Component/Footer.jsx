@@ -3,13 +3,13 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="w-full  bg-black">
-      <div className="w-[1200px] text-white py-[100px] bg-black mx-auto ">
-        <div className="grid grid-cols-3 space-x-5 rounded-2xl ">
+      <div className="md:w-[1200px] text-white py-[100px] bg-black mx-auto ">
+        <div className="grid grid-cols-1 space-y-5 px-5 md:grid-cols-3 space-x-5 rounded-2xl ">
           <div  >
             <div className="font-bold text-6xl pb-[50px]">
               Let's work together
             </div>
-            <div className="flex justify-center items-center space-x-4">
+            <div className="flex justify-center items-center md:space-x-4">
               <div className="font-bold text-2xl">Based in Germany | </div>
               <div className="flex justify-center items-center space-x-4">
                 <img src="./linkedin (1).png" alt="linked in" />
@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="font-bold text-center text-[130px] py-5 text-[#e8d9d9] border-b-[1px] border-white ">
+        <div className="font-bold text-5xl px-5 md:text-center md:text-[130px] py-5 text-[#e8d9d9] border-b-[1px] border-white ">
           Hussnain Shahid
         </div>
         <div className=" text-white flex justify-between items-center py-5 ">

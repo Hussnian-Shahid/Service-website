@@ -2,18 +2,18 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div className="py-[100px] w-[1200px]  mx-auto flex justify-center items-center gap-30   ">
-      <div className="w-[600px h-full] flex justify-center items-center p-20:">
-        <img src="./about1.png" className="w-[600px] h-full " alt="picture" />
+    <div className="md:py-[100px] py-[50px]  md:w-full mx-auto md:flex md:flex-row  md:justify-center md:items-center md:gap-30   ">
+      <div className="md:w-[600px] w-fit pb-20  md:p-20:">
+        <img src="./about1.png" className="" alt="picture" />
       </div>
-      <div className='flex flex-col w-[600px]' >
+      <div className='flex flex-col  px-10 md:w-[600px]' >
         <div className="font-bold  text-2xl text-orange-400">
           Assalam-o-Alikum! I'm
         </div>
-        <div className="font-bold font-Syne text-6xl">Hussnain Shahid,</div>
-        <div className="font-bold font-Syne text-6xl">Product</div>
-        <div className="font-bold font-Syne text-6xl">Designer</div>
-        <div className="font-bold font-Syne text-5xl py-5">Based in German</div>
+        <div className="font-bold text-3xl md:text-6xl">Hussnain Shahid,</div>
+        <div className="font-bold text-3xl md:text-6xl">Product</div>
+        <div className="font-bold text-3xl md:text-6xl">Designer</div>
+        <div className="font-bold text-3xl md:text-5xl py-5">Based in German</div>
         <div className="text-[#6B6B6B] text-[20px] ">
           Full Stack Developer with experience in front-end and back-end
           technologies, building responsive web applications, RESTful APIs, and

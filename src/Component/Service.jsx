@@ -2,21 +2,23 @@ import React from "react";
 
 const Service = () => {
   return (
-    <div className="h-screen w-[1200px] mx-auto pt-[80px]">
-      <div className="flex justify-center items-center">
+    <div className="md:h-screen md:w-[1200px] w-full mx-auto pt-[80px]">
+      <div className="md:flex md:justify-center md:items-center pl-[30px]  ">
         <div className="flex justify-start w-[1000px] items-start flex-col ">
           <div className="text-orange-400 text-2xl ">Service</div>
-          <div className="font-Syne font-bold text-6xl">My Specialties</div>
+          <div className="font-Syne font-bold text-3xl md:text-6xl">
+            My Specialties
+          </div>
         </div>
-        <div className="text-gray-400 text-[20px] text-center">
+        <div className="text-gray-400 text-[20px] md:text-center">
           Synergistically seize front-end methods of empowerment without
           extensive core competencies. Progressively repurpose alternative
           platforms
         </div>
       </div>
-      <div className="flex pt-15  ">
-        <div className=" grid grid-cols-3 gap-5   w-[950px]">
-          <div className=" hover:bg:white hover:text-orange-400 transition-all w-60  h-50 flex flex-col justify-between rounded p-7 bg-[#F5F5F5] ">
+      <div className="md:flex pt-15  ">
+        <div className=" grid grid-cols-1  md:grid-cols-3 gap-5  px-8  md:w-[950px]">
+          <div className="group hover:bg:white  hover:text-orange-400 transition-all md:w-60 w-85  md:h-50 flex flex-col justify-between rounded-2xl p-7 bg-[#F5F5F5] ">
             <div>
               <svg
                 className="w-13 h-13 bg-white rounded-full p-2  "
@@ -40,7 +42,7 @@ const Service = () => {
               </div>
               <div className="flex items-end">
                 <svg
-                  className=" w-6 h-6  font-bold text-[#bab9b9] group-hover:text-white"
+                  className=" w-6 h-6  font-bold text-black  group-hover:text-orange-400"
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -56,7 +58,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className=" hover:bg:white hover:text-orange-400 transition-all w-60  h-50 flex flex-col justify-between rounded p-7 bg-[#F5F5F5] ">
+          <div className="group hover:bg:white  hover:text-orange-400 transition-all md:w-60 w-85  md:h-50 flex flex-col justify-between rounded-2xl p-7 bg-[#F5F5F5] ">
             <div>
               <svg
                 fill="#000000"
@@ -111,7 +113,7 @@ const Service = () => {
               </div>
               <div className="flex items-end">
                 <svg
-                  className=" w-6 h-6  font-bold text-[#bab9b9] group-hover:text-white"
+                  className=" w-6 h-6  font-bold text-black  group-hover:text-orange-400"
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -127,7 +129,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className=" hover:bg:white hover:text-orange-400 transition-all w-60  h-50 flex flex-col justify-between rounded p-7 bg-[#F5F5F5] ">
+          <div className="group hover:bg:white  hover:text-orange-400 transition-all md:w-60 w-85  md:h-50 flex flex-col justify-between rounded-2xl p-7 bg-[#F5F5F5]">
             <div>
               <svg
                 fill="#000000"
@@ -198,14 +200,14 @@ const Service = () => {
                 </g>
               </svg>
             </div>
-            <div className="pt-6 flex justify-between">
+            <div className="pt-6 flex justify-between group ">
               <div className="font-Syne font-bold text-[22px]">
                 <div>Website </div>
                 <div>Design</div>
               </div>
               <div className="flex items-end">
                 <svg
-                  className=" w-6 h-6  font-bold text-[#bab9b9] group-hover:text-white"
+                  className=" w-6 h-6  font-bold  text-black  group-hover:text-orange-400"
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -221,7 +223,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className=" hover:bg:white hover:text-orange-400 transition-all w-60  h-50 flex flex-col justify-between rounded p-7 bg-[#F5F5F5] ">
+          <div className="group hover:bg:white  hover:text-orange-400 transition-all md:w-60 w-85  md:h-50 flex flex-col justify-between rounded-2xl p-7 bg-[#F5F5F5]">
             <div>
               <svg
                 className="w-13 h-13 bg-white rounded-full p-2  "
@@ -269,7 +271,7 @@ const Service = () => {
               </div>
               <div className="flex items-end">
                 <svg
-                  className=" w-6 h-6  font-bold text-[#bab9b9] group-hover:text-white"
+                  className=" w-6 h-6   text-black  group-hover:text-orange-400"
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -285,7 +287,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className=" hover:bg:white hover:text-orange-400 transition-all w-60  h-50 flex flex-col justify-between rounded p-7 bg-[#F5F5F5] ">
+          <div className="group hover:bg:white  hover:text-orange-400 transition-all md:w-60 w-85  md:h-50 flex flex-col justify-between rounded-2xl p-7 bg-[#F5F5F5]">
             <div>
               <svg
                 fill="#000000"
@@ -311,7 +313,7 @@ const Service = () => {
               </div>
               <div className="flex items-end">
                 <svg
-                  className=" w-6 h-6  font-bold text-[#bab9b9] group-hover:text-white"
+                  className=" w-6 h-6  font-bold  text-black  group-hover:text-orange-400"
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -327,7 +329,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-          <div className=" hover:bg:white hover:text-orange-400 transition-all w-60  h-50 flex flex-col justify-between rounded p-7 bg-[#F5F5F5] ">
+          <div className="group hover:bg:white  hover:text-orange-400 transition-all md:w-60 w-85  h-50 flex flex-col justify-between rounded-2xl p-7 bg-[#F5F5F5]">
             <div>
               <svg
                 className="w-13 h-13 bg-white rounded-full p-2  "
@@ -351,7 +353,7 @@ const Service = () => {
               </div>
               <div className="flex items-end">
                 <svg
-                  className=" w-6 h-6  font-bold text-[#bab9b9] group-hover:text-white"
+                  className=" w-6 h-6  font-bold  text-black  group-hover:text-orange-400"
                   viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -368,11 +370,11 @@ const Service = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className="p-5 bg-black h-105 rounded-2xl w-[350px] flex flex-col justify-between ">
+        <div className="px-8 py-5" >
+          <div className=" p-5 group w-85 bg-black md:h-105 h-60 rounded-2xl md:w-[350px] flex flex-col justify-between ">
             <div className="flex justify-end">
               <svg
-                className=" w-15  h-15  font-bold text-white "
+                className=" w-15  h-15   text-white  group-hover:text-orange-400"
                 viewBox="0 0 1024 1024"
                 xmlns="http://www.w3.org/2000/svg"
               >

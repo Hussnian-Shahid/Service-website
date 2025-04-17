@@ -22,10 +22,10 @@ const Paid = () => {
         },
     ]
   return (
-    <div className="w-[1200px] mx-auto  py-[100px] ">
+    <div className="md:w-[1200px] mx-auto  py-[100px] px-5">
       <div className='text-orange-400 text-2xl font-bold ' >Pricing</div>
-      <div className='flex justify-between items-end' >
-        <div className="flex flex-col text-6xl font-bold ">
+      <div className='md:flex justify-between items-end' >
+        <div className="flex flex-col text-4xl py-5 md:text-6xl font-bold ">
           <div>Stay chill and </div>
           <div>pick your plan</div>
         </div>
@@ -53,9 +53,9 @@ const Paid = () => {
           </div>
         </div>
       </div>
-      <div className='  grid grid-cols-3 space-x-5  rounded-2xl py-[50px] ' >
+      <div className='  grid grid-cols-1  md:grid-cols-3 space-y-5 pt-5 space-x-5  rounded-2xl  md:py-[50px] ' >
         {price.map((pr, index) => (
-          <div key={pr.index} className=' group hover:bg-white p-10 shadow-2xl transition-all rounded-2xl bg-[#f1f1f1]' >
+          <div key={pr.index} className=' group hover:bg-white p-10 shadow-2xl transition-all rounded-2xl  bg-[#f1f1f1] ' >
             <div className='flex justify-between pb-10 ' >
               <div className='text-[#676767]' >{pr.type}</div>
               <div className='font-bold text-orange-400' >{pr.price}</div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-[#FFE9D9] font-Syne h-[800px] relative w-full bg-[url('/hero.png')] bg-no-repeat bg-right-bottom bg-contain">
+    <div className="bg-[#FFE9D9]  font-Syne md:h-[800px] relative md:w-full  md:bg-[url('/hero.png')] md:bg-no-repeat md:bg-right-bottom md:bg-contain">
       {/* Top nav */}
       <div className="flex">
         <div className="pl-[45px]"></div>
@@ -46,18 +46,18 @@ const Header = () => {
         </div>
       </div>
       {/* Header section */}
-      <section className="pt-[100px] pl-[100px] font-Syne  ">
+      <section className="md:pt-[100px] md:pl-[100px] pl-[45px] pt-[50px] font-Syne  ">
         <div className="font-Syne ">
-          <div className="text-5xl pl-[30px] font-bold">
+          <div className="md:text-5xl text-2xl font-bold">
             Assalam-o-Alikum, I'm
           </div>
-          <div class="text-9xl font-bold">Hussnain</div>
-          <div class="text-9xl font-bold pl-15">Shahid</div>
-          <div className="font-bold text-2xl mb-8 ">
+          <div class="md:text-9xl text-4xl font-bold">Hussnain</div>
+          <div class="md:text-9xl text-4xl font-bold md:pl-15">Shahid</div>
+          <div className="font-bold text-[18px] py-5  md:text-2xl md:mb-8 ">
             Product Designer | Based in Pakistan
           </div>
           <div className="flex justify-start items-center gap-5  font-bold text-[18px]">
-            <button className="group  flex justify-center items-center gap-2 bg-black border-[1px] border-black text-white rounded px-7 py-4 hover:text-black hover:bg-transparent ">
+            <button className="group  flex justify-center items-center gap-2 bg-black border-[1px] border-black text-white rounded md:px-7 md:py-4 px-4 py-2 hover:text-black hover:bg-transparent ">
               Let's Talk{" "}
               <span>
                 <svg
@@ -78,7 +78,7 @@ const Header = () => {
                 </svg>
               </span>{" "}
             </button>
-            <button className="group  flex justify-center items-center gap-2 bg-transparent border-[1px] border-black text-black rounded px-7 py-4 hover:text-white hover:bg-black ">
+            <button className="group  flex justify-center items-center gap-2 bg-transparent border-[1px] border-black text-black rounded md:px-7 md:py-4 px-4 py-2 hover:text-white hover:bg-black ">
               My Work
               <span>
                 <svg
@@ -100,10 +100,10 @@ const Header = () => {
               </span>{" "}
             </button>
           </div>
-          <div className="flex justify-start flex-row items-center  pt-18  ">
+          <div className="md:flex justify-start flex-row items-center  pt-18  ">
             <div className="font-bold text-4xl"> 1.2K + </div>
-            <div className=" flex justify-center items-center gap-6 cursor-pointer">
-              <div className="text-gray-500 text-[16px] px-2 pl-7">
+            <div className=" flex md:justify-center pb-5 items-center gap-6 cursor-pointer">
+              <div className="text-gray-500 text-[16px] md:px-2 md:pl-7">
                 Worldwide client{" "}
               </div>
               <div className="text-gray-500 pr-2"> | </div>
