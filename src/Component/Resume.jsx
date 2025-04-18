@@ -6,14 +6,16 @@ const Resume = () => {
       <div className="md:w-[600px] w-fit pb-20  md:p-20:">
         <img src="./about1.png" className="" alt="picture" />
       </div>
-      <div className='flex flex-col  px-10 md:w-[600px]' >
+      <div className="flex flex-col  px-10 md:w-[600px]">
         <div className="font-bold  text-2xl text-orange-400">
           Assalam-o-Alikum! I'm
         </div>
-        <div className="font-bold text-3xl md:text-6xl">Hussnain Shahid,</div>
-        <div className="font-bold text-3xl md:text-6xl">Product</div>
-        <div className="font-bold text-3xl md:text-6xl">Designer</div>
-        <div className="font-bold text-3xl md:text-5xl py-5">Based in German</div>
+        <div className="font-bold text-3xl md:text-5xl"><span className='text-orange-400' > H</span>ussnain Shahid,</div>
+        <div className="font-bold text-3xl md:text-5xl">Product</div>
+        <div className="font-bold text-3xl md:text-5xl">Designer</div>
+        <div className="font-bold text-3xl md:text-5xl py-5">
+          Based in German
+        </div>
         <div className="text-[#6B6B6B] text-[20px] ">
           Full Stack Developer with experience in front-end and back-end
           technologies, building responsive web applications, RESTful APIs, and

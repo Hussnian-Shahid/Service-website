@@ -33,15 +33,15 @@ const Blog = () => {
       <div className="pt-[50px] text-orange-400 font-bold text-center text-2xl">
         Blog
       </div>
-      <div className="font-bold text-3xl md:text-6xl text-center">My blog post</div>
-      <div className="pt-15 grid grid-cols-1 px-5 md:grid-cols-4  space-x-10">
+      <div className="font-bold text-3xl md:text-6xl text-center"><span className="text-orange-400">M</span>y blog post</div>
+      <div className="pt-15 grid grid-cols-1 px-5 md:grid-cols-4  md:space-x-10">
         {blog &&
           blog.map((blo, index) => (
             <div key={index} className="pb-15" >
-              <div>
-                <img src={blo.image} alt="" />
+              <div className="overflow-hidden" >
+                <img className="w-full "  src={blo.image} alt="" />
               </div>
-              <div className="flex justify-center items-center md:space-x-3 px-5 pt-4">
+              <div className="flex justify-center items-center md:space-x-1 px-1 pt-4">
                 <div  className="flex flex-row-reverse justify-center items-center">
                   <div>{blo.title}</div>
                   <div>

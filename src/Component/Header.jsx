@@ -1,23 +1,34 @@
-import React from "react";
+// import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+// import Menu from "./Menu";
 
 const Header = () => {
+  // const [menu,setmenu] = useState(false)
+  // const closeFunction = () => setmenu(false)
+
   return (
     <div className="bg-[#FFE9D9]  font-Syne md:h-[800px] relative md:w-full  md:bg-[url('/hero.png')] md:bg-no-repeat md:bg-right-bottom md:bg-contain">
+      {/* {menu && <Menu closeFunction={closeFunction} />} */}
       {/* Top nav */}
-      <div className="flex">
+      {/* <div className="flex">
         <div className="pl-[45px]"></div>
         <div className="flex w-full justify-between items-center border-b-[1px] border-black">
           <div>
-            <a href="">
-              <img src="./logo.png" alt="logo" />
-            </a>
+            <Link to="/">
+              <a href="">
+                <img src="/logo.png" alt="logo" />
+              </a>
+            </Link>
           </div>
           <div>
-            <div className="flex justify-center items-center gap-2.5">
-              <div className="text-[15px] font-bold hover:text-white transition-all">
-                {" "}
-                Let's talk{" "}
-              </div>
+            <div className="flex group justify-center items-center gap-2.5">
+              <Link to="/contact">
+                <div className=" text-[15px] font-bold hover:text-white transition-all">
+                  {" "}
+                  Let's talk{" "}
+                </div>
+              </Link>
               <div className="hover:text-white text-2xl">
                 <span>
                   <svg
@@ -38,21 +49,25 @@ const Header = () => {
                   </svg>
                 </span>{" "}
               </div>
-              <button className="py-5 px-10 bg-black text-white text-4xl">
+              <button
+                onClick={() => setmenu(true)}
+                className="py-5 px-10 bg-black text-white text-4xl"
+              >
                 =
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Header section */}
+      <Navbar/>
       <section className="md:pt-[100px] md:pl-[100px] pl-[45px] pt-[50px] font-Syne  ">
         <div className="font-Syne ">
           <div className="md:text-5xl text-2xl font-bold">
             Assalam-o-Alikum, I'm
           </div>
-          <div class="md:text-9xl text-4xl font-bold">Hussnain</div>
-          <div class="md:text-9xl text-4xl font-bold md:pl-15">Shahid</div>
+          <div class="md:text-9xl text-4xl font-bold"><span className="text-orange-400" >H</span>ussnain</div>
+          <div class="md:text-9xl text-4xl font-bold ">Shahid</div>
           <div className="font-bold text-[18px] py-5  md:text-2xl md:mb-8 ">
             Product Designer | Based in Pakistan
           </div>
@@ -102,7 +117,7 @@ const Header = () => {
           </div>
           <div className="md:flex justify-start flex-row items-center  pt-18  ">
             <div className="font-bold text-4xl"> 1.2K + </div>
-            <div className=" flex md:justify-center pb-5 items-center gap-6 cursor-pointer">
+            <div className=" flex md:justify-center  items-center gap-6 cursor-pointer">
               <div className="text-gray-500 text-[16px] md:px-2 md:pl-7">
                 Worldwide client{" "}
               </div>

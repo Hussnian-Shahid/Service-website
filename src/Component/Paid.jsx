@@ -25,8 +25,8 @@ const Paid = () => {
     <div className="md:w-[1200px] mx-auto  py-[100px] px-5">
       <div className='text-orange-400 text-2xl font-bold ' >Pricing</div>
       <div className='md:flex justify-between items-end' >
-        <div className="flex flex-col text-4xl py-5 md:text-6xl font-bold ">
-          <div>Stay chill and </div>
+        <div className="flex flex-col text-4xl pt-5 md:text-6xl font-bold ">
+          <div><span className='text-orange-400' >S</span>tay chill and </div>
           <div>pick your plan</div>
         </div>
         <div>

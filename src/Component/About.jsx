@@ -7,10 +7,10 @@ const About = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <div className="md:w-[1200px]  mx-auto  pb-[100px] md:flex gap-40 pt-[50px] ">
-        <div className="w-[350px] w-[]  bg-[#F5F5F5] p-5 ">
+        <div className="w-[350px]  bg-[#F5F5F5] p-5 ">
           <div className="text-orange-400 font-bold text-2xl">Resume</div>
           <div className="font-Syne font-bold text-5xl py-4">
-            All over my details find here...
+            <span className="text-orange-400" >A</span>ll over my details find here...
           </div>
           <div className="flex flex-col gap-y-4">
             {tabs.map((tab, index) => (
@@ -26,9 +26,9 @@ const About = () => {
                 >
                   {tab}
                   <svg
-                    className="group font-bold hover:text-white text-black focus:text-white"
-                    width="22px"
-                    height="22px"
+                    className="font-bold text-black group-hover:text-white"
+                    width="25px"
+                    height="25px"
                     viewBox="0 0 1024 1024"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -48,11 +48,11 @@ const About = () => {
         </div>
 
         <div className="md:w-[850px] ">
-          {activeTab === 0 && <Aboutme/>}
-          {activeTab === 1 && <Experience/>}
+          {activeTab === 0 && <Aboutme />}
+          {activeTab === 1 && <Experience />}
           {activeTab === 2 && <Education />}
-          {activeTab === 3 && <Skills/>}
-          {activeTab === 4 && <Award/>}
+          {activeTab === 3 && <Skills />}
+          {activeTab === 4 && <Award />}
         </div>
       </div>
     </div>
