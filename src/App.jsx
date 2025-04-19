@@ -9,6 +9,7 @@ import Blogmenu from "./Component/Blogmenu";
 import Blogdetail from "./Component/Blogdetail";
 
 
+
 const App = () => {
   return (
     <>

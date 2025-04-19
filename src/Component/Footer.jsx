@@ -4,16 +4,16 @@ import Header from './Header';
 const Footer = () => {
   
   return (
-    <div className="w-full bg-black">
+    <div className=" w-full bg-black">
       <div className=" text-white py-[50px]  bg-black mx-auto md:px-[100px] px-[30px] ">
-        <div className="md:flex justify-center items-center md:gap-5 space-y-5 rounded-2xl ">
-          <div>
+        <div className="md:flex  justify-center items-center md:gap-5 space-y-5 rounded-2xl ">
+          <div className='' >
             <div className="font-bold text-3xl md:text-6xl pt-[30px] pb-[25px]">
               Let's work together
             </div>
             <div className="md:flex md:justify-start items-center md:space-x-1">
               <div className="font-bold text-2xl">
-                Based in Germany <span className='hidden' >|</span>{" "}
+                Based in Germany <span className="hidden">|</span>{" "}
               </div>
               <div className="flex md:justify-center items-center space-x-4 md:space-x-1">
                 <img src="./linkedin (1).png" alt="linked in" />

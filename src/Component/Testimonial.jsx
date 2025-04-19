@@ -23,13 +23,15 @@ const Testimonial = () => {
           ]
         };
   return (
-    <div className=" px-7.5 md:px-[100px] mx-auto md:py-[80px] ">
+    <div className="animate__animated animate__fadeInUp animate__delay-1s px-7.5 md:px-[100px] mx-auto md:py-[80px] ">
       <div className="md:flex pb-50 ">
         <div className="">
           <div className="text-orange-400  text-2xl font-bold pt-15 ">
             Testimonial
           </div>
-          <div className="md:text-6xl text-5xl font-bold"><span className='text-orange-400' >C</span>lient</div>
+          <div className="md:text-6xl text-5xl font-bold">
+            <span className="text-orange-400">C</span>lient
+          </div>
           <div className="md:text-6xl text-5xl font-bold">FeedBack</div>
         </div>
         <div>

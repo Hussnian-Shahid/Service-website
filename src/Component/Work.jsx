@@ -4,16 +4,22 @@ const Work = () => {
   return (
     <div className="bg-[#FFE9D9] ">
       <div className="md:px-[100px]  mx-auto py-[100px] ">
-        <div className="text-center font-bold text-orange-400 text-2xl">
-          Portfolio
+        <div className="animate__animated animate__fadeInUp ">
+          <div className="text-center font-bold text-orange-400 text-2xl">
+            Portfolio
+          </div>
+          <div className="pb-10 text-center font-bold text-3xl md:text-6xl">
+            <span className="text-orange-400">M</span>y recent work
+          </div>
         </div>
-        <div className="pb-10 text-center font-bold text-3xl md:text-6xl">
-          <span className='text-orange-400' >M</span>y recent work
-        </div>
-        <div className="md:flex px-7.5 justify-center items-center md:gap-10 ">
+        <div className="md:flex px-7.5 justify-center items-center animate__animated animate__fadeInUp animate__delay-1s md:gap-10 ">
           {/* project 1 */}
-          <div>
-            <img className="pb-3 md:w-full" src="./project1.png" alt="project1" />
+          <div className="">
+            <img
+              className="pb-3 md:w-full"
+              src="./project1.png"
+              alt="project1"
+            />
             <div className="  flex space-x-3 pt-4">
               <button className="hover:bg-black hover:text-white border rounded-[12px] px-4  ">
                 APP

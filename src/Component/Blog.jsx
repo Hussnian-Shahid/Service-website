@@ -30,7 +30,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="md:px-[100px] mx-auto pt-7.5 px-7.5 ">
+    <div className=" animate__animated animate__fadeInUp animate__delay-1s md:px-[100px] mx-auto pt-7.5 px-7.5 ">
       <div className=" text-orange-400 font-bold text-center text-2xl">
         Blog
       </div>

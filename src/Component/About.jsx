@@ -7,14 +7,18 @@ const About = () => {
   return (
     <div className="bg-[#F5F5F5]">
       <div className="px-5 md:px-10 lg:px-[100px] mx-auto pb-[100px] flex flex-col md:flex-row gap-10 md:gap-20 pt-[50px]">
-        <div className="w-full md:w-[350px]">
+        <div className="w-full animate__animated animate__fadeInUp   md:w-[350px]">
           <div className="text-orange-400 font-bold text-2xl">Resume</div>
           <div className="py-5 text-4xl md:text-6xl font-bold">
-            <span className="text-orange-400">A</span>ll over my detail find here...
+            <span className="text-orange-400">A</span>ll over my detail find
+            here...
           </div>
           <div className="flex flex-col gap-y-4">
             {tabs.map((tab, index) => (
-              <div key={`tab${index}`} className="flex justify-between items-center bg-white">
+              <div
+                key={`tab${index}`}
+                className="flex justify-between items-center bg-white"
+              >
                 <button
                   onClick={() => setactiveTab(index)}
                   className={`group font-bold flex justify-between items-center w-full rounded-[5px] p-3.5 transition-all duration-300 ${
@@ -26,15 +30,23 @@ const About = () => {
                   {tab}
                   <svg
                     className={`transition-all duration-300 ${
-                      activeTab === index ? "text-white" : "text-black group-hover:text-white"
+                      activeTab === index
+                        ? "text-white"
+                        : "text-black group-hover:text-white"
                     }`}
                     width="25px"
                     height="25px"
                     viewBox="0 0 1024 1024"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path fill="currentColor" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z" />
-                    <path fill="currentColor" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z" />
+                    <path
+                      fill="currentColor"
+                      d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -42,7 +54,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-[850px]">
+        <div className="w-full animate__animated animate__fadeInUp animate__delay-1s md:w-[850px]">
           {activeTab === 0 && <Aboutme />}
           {activeTab === 1 && <Experience />}
           {activeTab === 2 && <Education />}

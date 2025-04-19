@@ -8,6 +8,8 @@ import Testimonial from "./Component/Testimonial";
 import Blog from "./Component/Blog";
 import Paid from "./Component/Paid";
 import Footer from "./Component/Footer";
+import "animate.css";
+
 
 const Home = () => {
   return (

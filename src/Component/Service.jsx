@@ -245,7 +245,7 @@ const Service = () => {
   return (
     <>
       <div className="md:px-[100px] px-[30px] mx-auto pt-[80px]">
-        <div className="md:flex md:items-center  ">
+        <div className="md:flex md:items-center animate__animated animate__fadeInUp  ">
           <div className="flex justify-start  items-start flex-col ">
             <div className="text-orange-400 font-bold  text-2xl ">Services</div>
             <div className="font-Syne font-bold md:w-[700px] text-3xl md:text-6xl">
@@ -259,7 +259,7 @@ const Service = () => {
           </div>
         </div>
         <div className="pt-15 relative">
-          <div className="md:w-[1000px] grid grid-cols-1   md:grid-cols-3 gap-5 shadow-2xs   ">
+          <div className="md:w-[1000px] grid grid-cols-1 animate__animated animate__fadeInUp animate__delay-1s  md:grid-cols-3 gap-5 shadow-2xs   ">
             {boxs.map((box, index) => {
               return (
                 <div
@@ -278,7 +278,7 @@ const Service = () => {
               );
             })}
           </div>
-          <div className="absolute md:top-0 md:left-250  py-5 w-92 md:px-5 ">
+          <div className="absolute block animate__animated animate__zoomIn animate__delay-1s md:top-0 md:left-250  py-5 w-92 md:px-5 ">
             <div className=" md:mt-10 p-5 group  bg-black  md:h-111  rounded-2xl md:w-[450px] flex flex-col justify-between ">
               <div className="flex justify-end">
                 <svg
@@ -296,7 +296,7 @@ const Service = () => {
                   />
                 </svg>
               </div>
-              <div className="flex flex-col items-start pb-5 ">
+              <div className="flex  flex-col items-start pb-5 ">
                 <div className="text-orange-400 text-4xl ">
                   Tell me Something!
                 </div>
