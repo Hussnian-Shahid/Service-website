@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 const Menu = ({ closeFunction }) => {
   return (
-    <div className="flex absolute  w-full justify-end ">
-      <div className="md:w-[460px] w-[350px] pl-8   absolute bg-black  ">
+    <div className="flex absolute   w-full justify-end ">
+      <div className="md:w-[460px] w-[350px] pl-8 md:h-screen   absolute bg-black  ">
         <div className="flex justify-between items-center border-b-[1px] border-white ">
           <div>
             <img src="/logomenu.png" alt="" />

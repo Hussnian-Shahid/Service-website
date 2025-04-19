@@ -8,22 +8,32 @@ const Testimonial = () => {
         const settings = {
           dots: true,
           infinite: false,
-          speed: 500,
-          slidesToShow: 1,
+          speed: 1000,
+          slidesToShow: 3,
           slidesToScroll: 1,
+          responsive : [
+            {
+              breakpoint:786,
+              settings:{
+                slidesToShow: 1,
+                slidesToShow:1,
+                dots: true,
+              }
+            }
+          ]
         };
   return (
-    <div className="md:w-[1200px] mx-auto py-[80px] ">
+    <div className=" px-7.5 md:px-[100px] mx-auto md:py-[80px] ">
       <div className="md:flex pb-50 ">
-        <div className="w-[600px]">
-          <div className="text-orange-400 px-5 text-2xl font-bold pt-15 ">
+        <div className="">
+          <div className="text-orange-400  text-2xl font-bold pt-15 ">
             Testimonial
           </div>
-          <div className="md:text-6xl text-5xl px-5 font-bold"><span className='text-orange-400' >C</span>lient</div>
-          <div className="md:text-6xl text-5xl px-5 font-bold">FeedBack</div>
+          <div className="md:text-6xl text-5xl font-bold"><span className='text-orange-400' >C</span>lient</div>
+          <div className="md:text-6xl text-5xl font-bold">FeedBack</div>
         </div>
         <div>
-          <div className="slider-container px-5 md:w-[600px]  ">
+          <div className="slider-container px-5 md:w-[1200px] w-[400px]  ">
             <Slider {...settings}>
               <div className="">
                 <div className="text-8xl font-bold  ">,,</div>
