@@ -62,7 +62,7 @@ const Paid = () => {
         {price.map((pr, index) => (
           <div
             key={index}
-            className="group hover:bg-white p-10 shadow-2xl transition-all rounded-2xl bg-[#f1f1f1]"
+            className="group hover:bg-white p-10  transition-all rounded-2xl bg-[#f1f1f1]"
           >
             <div className="flex justify-between pb-10">
               <div className="text-[#676767]">{pr.type}</div>

@@ -35,7 +35,7 @@ const Testimonial = () => {
           <div className="md:text-6xl text-5xl font-bold">FeedBack</div>
         </div>
         <div>
-          <div className="slider-container px-5 md:w-[1200px] w-[400px]  ">
+          <div className="slider-container px-5 md:w-[1200px] w-[315  px]  ">
             <Slider {...settings}>
               <div className="">
                 <div className="text-8xl font-bold  ">,,</div>

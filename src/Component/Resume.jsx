@@ -3,8 +3,8 @@ import React from 'react'
 const Resume = () => {
   return (
     <div className="md:py-[100px] animate__animated animate__bounceIn animate__delay-1s  px-[30px] md:px-[100px] py-[50px] pt-80  md:w-full md:flex md:flex-row  md:justify-center md:items-center md:gap-30   ">
-      <div className="md:w-full  w-[370px] pb-10 ">
-        <img src="./about1.png" className="" alt="picture" />
+      <div className="md:w-full  w-[315px] pb-10 ">
+        <img   src="./about1.png" className="" alt="picture" />
       </div>
       <div className="md:flex flex-col  md:px-10 ">
         <div className="font-bold  text-2xl text-orange-400">

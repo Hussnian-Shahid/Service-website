@@ -48,7 +48,7 @@ const Navbar = () => {
           <div>
             <button
               onClick={() => showFunction()}
-              className="py-5 px-10 bg-black text-white text-4xl"
+              className="cursor-pointer py-5 px-10 bg-black text-white text-4xl"
             >
               =
             </button>

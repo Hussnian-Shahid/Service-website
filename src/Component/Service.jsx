@@ -278,7 +278,7 @@ const Service = () => {
               );
             })}
           </div>
-          <div className="absolute block animate__animated animate__zoomIn animate__delay-1s md:top-0 md:left-250  py-5 w-92 md:px-5 ">
+          <div className="absolute block animate__animated animate__zoomIn animate__delay-1s md:top-0 md:left-250  py-5 w-[315px] md:w-92 md:px-5 ">
             <div className=" md:mt-10 p-5 group  bg-black  md:h-111  rounded-2xl md:w-[450px] flex flex-col justify-between ">
               <div className="flex justify-end">
                 <svg
