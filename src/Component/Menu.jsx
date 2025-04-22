@@ -40,12 +40,12 @@ const Menu = ({ closeFunction }) => {
         </div>
         <div
           onClick={() => closeFunction()}
-          className="  text-white pr-8 font-bold text-[18px] pt-20    mb-4   "
+          className=" cursor-pointer  text-white pr-8 font-bold text-[18px] pt-20    mb-4   "
         >
           <Link to="/">
             <div
               onClick={() => closeFunction()}
-              className="flex justify-between group border-b-[1px] border-[#ada3a3] hover:text-orange-400 transition-all py-4  "
+              className="  flex justify-between group border-b-[1px] border-[#ada3a3] hover:text-orange-400 transition-all py-4  "
             >
               <div>Home</div>
               <div>
