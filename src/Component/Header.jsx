@@ -71,9 +71,12 @@ const Header = () => {
                   Worldwide client{" "}
                 </div>
                 <div className="text-gray-500 pr-2"> | </div>
-                <img src="./linkedin.png" alt="linked in" />
-                <img src="./connections.png" alt="Network" />
-                <img src="./github.png" alt="Git Hub" />
+                <a href="https://www.linkedin.com/in/hussnain-shahid-web/">
+                  <img src="./linkedin.png" />
+                </a>
+                <a href="https://github.com/Hussnian-Shahid">
+                  <img src="./github.png" />
+                </a>
               </div>
             </div>
           </div>

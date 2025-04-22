@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Menu = ({ closeFunction }) => {
   return (
-    <div className="flex absolute   w-full justify-end ">
-      <div className="md:w-[460px] w-[350px] pl-8  bg-black  ">
+    <div className="flex absolute z-10 w-full justify-end ">
+      <div className="md:w-[460px] w-[350px] pl-8 md:h-screen bg-black  ">
         <div className="flex justify-between items-center border-b-[1px] border-white ">
           <div>
             <img src="/logomenu.png" alt="" />
@@ -66,29 +66,31 @@ const Menu = ({ closeFunction }) => {
               </div>
             </div>
           </Link>
-          <Link to="/about">
-            <div className="flex justify-between group border-b-[1px] border-[#ada3a3] hover:text-orange-400 transition-all py-4  ">
-              <div>About</div>
-              <div>
-                <svg
-                  className=" text-[15px] font-bold text-white group-hover:text-orange-400 "
-                  width="20px"
-                  height="20px"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z"
-                  />
-                  <path
-                    fill="currentColor"
-                    d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z"
-                  />
-                </svg>
-              </div>
+
+          <div className="flex justify-between group border-b-[1px] border-[#ada3a3] hover:text-orange-400 transition-all py-4  ">
+            <Link to="/about">
+              <div className="hover:text-orange-400 transition-all ">About</div>
+            </Link>
+
+            <div>
+              <svg
+                className=" text-[15px] font-bold text-white group-hover:text-orange-400 "
+                width="20px"
+                height="20px"
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z"
+                />
+              </svg>
             </div>
-          </Link>
+          </div>
           <Link to="/project">
             <div className="flex justify-between group border-b-[1px] border-[#ada3a3] hover:text-orange-400 transition-all py-4  ">
               <div>Project</div>
@@ -206,9 +208,15 @@ const Menu = ({ closeFunction }) => {
           </Link>
         </div>
         <div className="flex justify-start items-center space-x-4 py-13">
-          <img src="./linkedin (1).png" alt="linked in" />
+          <img
+            src="./linkedin (1).png"
+            alt="https://www.linkedin.com/in/hussnain-shahid-web/"
+          />
           <img src="./web.png" alt="Network" />
-          <img src="./github (1).png" alt="Git Hub" />
+          <img
+            src="./github (1).png"
+            alt="https://github.com/Hussnian-Shahid"
+          />
         </div>
       </div>
     </div>

@@ -260,7 +260,7 @@ const Service = () => {
         </div>
         <div className="pt-15 relative">
           <div className="md:w-[1000px] grid grid-cols-1 animate__animated animate__fadeInUp animate__delay-1s  md:grid-cols-3 gap-5 shadow-2xs   ">
-            {boxs.map((box, index) => {
+            {boxs.map((box, id) => {
               return (
                 <div
                   key={box.index}
